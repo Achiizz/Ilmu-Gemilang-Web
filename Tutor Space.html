@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Materi</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue */
+            color: #333;
+        }
+
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        /* Form Styles */
+        .card h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #1e90ff; /* Dodger Blue */
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+        }
+
+        .form-group textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #1e90ff; /* Dodger Blue */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #104e8b; /* Darker Blue */
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            .card {
+                padding: 20px;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <!-- Upload Materi Section -->
+        <section class="card">
+            <h2>Upload Materi</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="title">Judul Materi:</label>
+                    <input type="text" id="title" name="title" placeholder="Masukkan judul materi">
+                </div>
+                <div class="form-group">
+                    <label for="description">Deskripsi Materi:</label>
+                    <textarea id="description" name="description" placeholder="Masukkan deskripsi materi"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="file">Pilih File:</label>
+                    <input type="file" id="file" name="file">
+                </div>
+                <button type="submit" class="btn">Upload</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

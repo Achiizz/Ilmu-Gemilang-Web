@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bimbel Ilmu Gemilang</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header and Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Main Section */
+        main {
+            padding: 20px;
+        }
+
+        /* Section Card */
+        .card {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .card h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .grid-item h3 {
+            margin: 15px 0;
+            font-size: 22px;
+            color: #2c3e50;
+        }
+
+        .grid-item p {
+            color: #7f8c8d;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .grid-item .link {
+            font-size: 16px;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .grid-item .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Konten Per Kelas Section -->
+        <section class="card">
+            <h2>Materi</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="https://storage.googleapis.com/a1aa/image/2phH2CUYeq0RRiA9HbNrwuaGxKKuHfVv2leKoXZMzU93cCrnA.jpg" alt="Kelas 1">
+                    <h3>Kelas 1</h3>
+                    <p>Materi untuk kelas 1.</p>
+                    <a href="#" class="link">Lihat Materi</a>
+                </div>
+                <div class="grid-item">
+                    <img src="https://storage.googleapis.com/a1aa/image/SN4bKfyfJzoGQkEvVOR8OeleeGfz2Pa6sGauWxQKcF8ToTY9E.jpg" alt="Kelas 2">
+                    <h3>Kelas 2</h3>
+                    <p>Materi untuk kelas 2.</p>
+                    <a href="#" class="link">Lihat Materi</a>
+                </div>
+                <div class="grid-item">
+                    <img src="https://storage.googleapis.com/a1aa/image/3ftfpsyzzHpWvkv7LvGoespYT4GRvFTa67in2SymTYP0cCrnA.jpg" alt="Kelas 3">
+                    <h3>Kelas 3</h3>
+                    <p>Materi untuk kelas 3.</p>
+                    <a href="#" class="link">Lihat Materi</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2023 Bimbel Ilmu Gemilang. All rights reserved.</p>
+    </footer>
+</body>
+</html>
